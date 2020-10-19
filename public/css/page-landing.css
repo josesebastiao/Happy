@@ -1,3 +1,4 @@
+/*Essa estrutura a gente está seguindo a ordem que está lá no HTML*/
 #page-landing {
   background: linear-gradient(0deg, #29b6d1 0%, #00c7c7 100%) no-repeat;
   text-align: center;
@@ -9,12 +10,30 @@
 
 #container {
   margin: auto;
+  width: min(90%, 112rem);
 }
 
 .location,
 h1,
 .visit p {
   height: 16vh;
+} /*Agrupamento das coisas*/
+
+#logo {
+  animation-delay: 50ms;
+}
+
+.location {
+  animation-delay: 100ms;
+}
+
+main h1 {
+  animation-delay: 150ms;
+  font-size: clamp(4rem, 8vw, 8.4rem);
+}
+
+.visit p {
+  animation-delay: 200ms;
 }
 
 .visit a {
@@ -30,28 +49,61 @@ h1,
   justify-content: center;
   margin: 0 auto;
   transition: background 200ms;
+  animation-delay: 250ms;
 }
 
 .visit a:hover {
   background: #96feff;
 }
 
-#logo {
-  animation-delay: 50ms;
-}
+/*Versão para Desktop*/
+@media (min-width: 760px) {
+  #container {
+    padding: 5rem 2rem; /*Aumentamos a caixa porque estava cortando a cabecinha da criancinha*/
+    background: url(../images/bg.svg) no-repeat 80% / clamp(30rem, 54vw, 56rem);
+    /* background-position: 80%;* aqui colocamos a imagem das criancinhas ajustadas*/
+  }
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
-.location {
-  animation-delay: 100ms;
-}
+  /*coloca o alinhamento inicial*/
+  .location,
+  h1,
+  .visit p {
+    height: initial;
+    text-align: initial;
+  }
 
-main h1 {
-  animation-delay: 150ms;
-}
+  .location {
+    text-align: right;
+    font-size: 2.4rem;
+    line-height: 1.5;
+  }
 
-.visit p {
-  animation-delay: 200ms;
-}
+  main h1 {
+    font-weight: bold;
+    line-height: 0.88;
 
-.visit a {
-  animation-delay: 250ms;
+    margin: clamp(10%, 9vh, 12%) 0 4rem;
+
+    width: min(300px, 80%);
+  }
+  .visit {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .visit p {
+    font-size: 2em;
+    line-height: 1.5;
+    width: clamp(20rem, 20vw, 30rem);
+  }
+
+  .visit a {
+    margin: initial;
+  }
 }
