@@ -30,6 +30,11 @@ aside footer p{
 
 }
 
+#mapid{
+    width: 100%;
+    height: 100%;
+}
+
 /*Botão*/
 
 a.criar-orfanato{
@@ -46,4 +51,9 @@ a.criar-orfanato{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition:background-color 200ms;
+}
+
+a.criar-orfanato:hover{
+background: #17D6EB;
 }
