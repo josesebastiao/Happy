@@ -42,6 +42,8 @@ a.criar-orfanato{
     right: 4rem;
     bottom: 4rem;
 
+    z-index: 10;
+
     width: 6.4rem;
     height: 6.4rem;
     background: #15c3d6;
@@ -56,4 +58,47 @@ a.criar-orfanato{
 
 a.criar-orfanato:hover{
 background: #17D6EB;
+}
+
+.leaflet-popup-content-wrapper{
+    background: rgba(255,255,255, 0.8);
+    border-radius: 20px;
+}
+
+.leaflet-popup-content{
+    
+    color: #0089a5;
+    margin: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.leaflet-popup-content a{
+    width: 4rem;
+    height: 4rem;
+    background: #15c3d6;
+    box-shadow: 17.2868px 27.6589px rgba(23, 142, 166, 0.16);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: background-color .2s;
+}
+
+.leaflet-popup-content a:hover{
+    background: #17D6EB;
+
+}
+
+.leaflet-popup-tip{
+    display: none;
+}
+
+.leaflet-container{
+    font: 800 2rem/1 'Nunito', sans-serif;
+    z-index: 5;
+    
 }
