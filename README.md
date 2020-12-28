@@ -1,3 +1,8 @@
+<h1 align="center">
+    <img alt="Happy" title="Happy" src=".github/logo.svg" />
+</h1>
+
+
 ## 💻 Projeto
 
 O [Happy](https://happy-josesebastiao.netlify.app/) é um projeto que visa facilitar visitas aos orfanatos próximos a você 💜 
